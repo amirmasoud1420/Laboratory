@@ -2,12 +2,13 @@ from abc import ABC
 
 
 class BaseModel(ABC):
+    id: int
     pass
 
 
-class BaseUser(BaseModel, ABC):
+class BaseUser(BaseModel):
     pass
 
 
-class BaseMenu(BaseModel, ABC):
+class BaseMenu(BaseModel):
     pass
