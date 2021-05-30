@@ -15,3 +15,9 @@ class BaseManager(ABC):
     @abstractmethod
     def delete(self):
         pass
+
+class FileManager(BaseManager):
+    pass
+
+class DatabaseManager(BaseManager):
+    pass
