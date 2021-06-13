@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login/laboratory</title>
+    <link rel="stylesheet" href={{ url_for('static',filename='bootstrap.min.css') }}>
+    <link rel="stylesheet" href={{ url_for('static',filename='login.css') }}>
+    <meta name="viewport" content="device-width, initial-scale=1">
+
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-12-lg col-12-sm">
+            <div class="card">
+                <form style="margin-left: 30%; margin-top: 10%">
+                    <label for="uname">User Name:</label><br>
+                    <input type="text" id="uname" name="uname" placeholder="Enter your username">
+                    <br><br>
+                    <label for="password">Password:</label><br>
+                    <input type="password" id="password" name="password" placeholder="Enter your password">
+                    <br><br>
+                    <input type="submit" id="login" name="login" value="Login" style="width: 25%; margin-left: 15%">
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,12 @@
+.card{
+    border: 5px solid black;
+    border-radius: 20px;
+    padding: 5%;
+    /*margin: 220px 800px;*/
+    width: 600px;
+    height: 400px;
+    background-image: url("Laboratory-Medicine.jpg");
+    border-image-width: 100%;
+    font-weight: bold;
+    position: center;
+}

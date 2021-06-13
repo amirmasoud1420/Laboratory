@@ -41,14 +41,16 @@ class MenuList(Menu):
 
 
 class MenuView(Menu):
-    def __init__(self, function, name=None, parent=None):
+    def __init__(self, function, name=None, parent=None, *args, **kwargs):
         if not name:
             name = function.__name__
         super().__init__(name, parent)
         self.function = function
+        self.args = args
+        self.kwargs = kwargs
 
     def __call__(self, *args, **kwargs):
-        self.function()
+        self.function(*self.args, **self.kwargs)
         if self.parent:
             self.parent()
         else:

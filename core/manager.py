@@ -1,4 +1,4 @@
-from abc import ABC,abstractmethod
+from abc import ABC, abstractmethod
 
 
 class BaseManager(ABC):
@@ -9,15 +9,19 @@ class BaseManager(ABC):
     @abstractmethod
     def read(self):
         pass
+
     @abstractmethod
     def update(self):
         pass
+
     @abstractmethod
     def delete(self):
         pass
 
+
 class FileManager(BaseManager):
     pass
+
 
 class DatabaseManager(BaseManager):
     pass

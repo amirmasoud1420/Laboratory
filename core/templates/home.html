@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action={{ url_for('doctor-login') }}>
+    <input type="submit" value="ورود به عنوان دکتر">
+</form>
+{% for i in tests %}
+    <form >
+        <input type="submit" value={{ i.name }}>
+    </form>
+{% endfor %}
+</body>
+</html>
